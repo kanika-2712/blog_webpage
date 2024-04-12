@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="post-body">
+    <div class="post-container">
+    <h1>Nourishing Insights: Explore Nutritious Tips for Your Well-Being</h1>
+    <% if(locals.name || locals.content){ %>
+         
+       
+        <div class="content-container0"> <div class="author-name"><%=name %></div> <div class="message"><%=content %></div> </div>
+           
+        <div class="content-container1">
+            <div class="author-name">Dr.Aarvi</div>
+            <div class="message">
+                <p>Plan and Prep Meals: Plan your meals ahead of time and prepare healthy snacks and ingredients in advance. This can help you make healthier choices and avoid resorting to unhealthy options when you're busy or hungry.</p>
+            </div> 
+        </div>
+
+
+
+
+    <%} else { %>
+        <div class="content-container0">
+            <div class="author-name">Kanika</div>
+            <div class="message">
+                <p>Limit Added Sugars and Saturated Fats: Reduce your intake of foods and beverages high in added sugars, such as sugary snacks, desserts, and sweetened beverages. Similarly, limit your intake of foods high in saturated fats, such as fried foods, processed meats, and full-fat dairy products.</p>
+            </div> 
+        </div>
+           
+        <div class="content-container2">
+            <div class="author-name">Dr.Aarvi</div>
+            <div class="message">
+                <p>Plan and Prep Meals: Plan your meals ahead of time and prepare healthy snacks and ingredients in advance. This can help you make healthier choices and avoid resorting to unhealthy options when you're busy or hungry.</p>
+            </div> 
+        </div>
+    
+
+    <%} %>
+
+   
+    
+    
+   
+
+    </div>
+    
+</body>
+</html>

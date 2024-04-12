@@ -11,7 +11,24 @@ app.use(bodyParser.urlencoded({ extended: true }));
  app.get("/",(req,res)=>{
     res.render("index.ejs");
  })
+ app.get("/form",(req,res)=>{
+    res.render("form.ejs");
+ })
+ app.get("/post",(req,res)=>{
+    res.render("post.ejs");
+ }
+)
+app.post("/post", (req, res) => {
+   const name = req.body.name;
+   const content = req.body.content;
 
+   console.log("Name:", name);
+   console.log("Content:", content);
+
+   res.render("post.ejs",{
+      name,content
+   });
+});
 
 
 

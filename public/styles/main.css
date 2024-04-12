@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+.post-body{
+    background-image: url("/images/pine.jpg");
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .post-container{
+    background-image: url("/images/post-bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 body{
     background-image: url("/images/bg.jpg");
     width: 100%;
@@ -31,6 +49,19 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#4A7D5E ;
 }
+
+/* .buttoncontainer #postbtn {
+    padding: 12px 24px;
+    background-color: #4A7D5E;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+
+
 button{
     padding: 20px;
     border-radius: 30px;
@@ -49,4 +80,149 @@ button{
     position: relative;
     top:50px;
     right: 300px;
+}
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(228,232,234,1) 50%, rgba(216,225,230,1) 100%);
+  
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    color: #4A7D5E;
+    height: 100vh; /* Adjust the height to fill the viewport */
+}
+
+.formcontainer h1 {
+   
+    font-family:'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-bottom: 70px; 
+}
+
+#form {
+    
+    width: 100%; /* Ensure the form takes up full width */
+    max-width: 400px; /* Limit the width of the form */
+   
+}
+
+.form-btn {
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+    width: 100%;
+    align-self: center;
+}
+
+#name,
+#content {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical;
+    height: 200px; /
+}
+
+
+#name{
+    height: 50px;
+}
+textarea {
+    resize: vertical;
+    height: 200px;
+    font-size: 19px; /* Adjust the font size as needed */
+}
+input[type="text"] {
+    font-size: 18px; /* Adjust the font size of text input fields */
+}
+button[type="submit"] {
+   
+    position: relative;
+    margin-top: 15px;
+    left: 60px;
+    padding: 10px 20px;
+    background-color: #B7CA97;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%; 
+    max-width: 200px; 
+}
+.content-container2{
+    margin-top: 80px;
+    background-color: white;
+    position:absolute;
+    width: 80%;
+    height: 250px;
+  
+   border-radius: 50px;
+   top:355px;
+   right: 100px;
+
+
+
+
+}
+.content-container1{
+    margin-top: 80px;
+    background-color: white;
+    position:absolute;
+    width: 80%;
+    height: 250px;
+  
+   border-radius: 50px;
+   top:355px;
+   right: 100px;
+
+
+}
+
+.content-container0{
+    margin-top: 80px;
+    
+    background-color: white;
+    position:absolute;
+    width: 80%;
+    height: 250px;
+  
+   border-radius: 50px;
+   top:90px;
+   right: 100px;
+
+
+}
+
+.author-name{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top:20px;
+    left: 50px;
+}
+.message{
+    width: 82%;
+    position: relative;
+    top:35px;
+    left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+
+}
+.post-container h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+    color:#40634e;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
